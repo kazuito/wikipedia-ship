@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Wikipedia Ship",
+  "description": "Wikipedia editing tool that enables preview in another tab/window.",
+  "version": "0.0.1",
+  "icons": {
+    "16": "img/icon/icon_16.png",
+    "32": "img/icon/icon_32.png",
+    "48": "img/icon/icon_48.png",
+    "128": "img/icon/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.wikipedia.org/*action=edit*",
+        "*://*.wikipedia.org/*action=submit*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": [
+    "*://*.wikipedia.org/*action=edit*",
+    "*://*.wikipedia.org/*action=submit*"
+  ]
+}
