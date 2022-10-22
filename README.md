@@ -1,6 +1,7 @@
-<h1 style="display: flex; align-items: center; gap: 16px;">
-  <img src="img/icon/icon_128.png" style="width: 48px;height:48px;" />
-  <div>Wikipedia Ship</div>
-</h1>
-
-Wikipedia editing tool that enables preview in another tab/window.
+<div align="center">
+  <h1>Wikipedia Ship</h1>
+  <img src="img/icon/icon_128.png" />
+  <p>
+    Wikipedia editing tool that enables preview in another tab/window.
+  </p>
+</div>
